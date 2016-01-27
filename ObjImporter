@@ -1,0 +1,26 @@
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+
+public class ObjImporter : MonoBehaviour {
+	
+	string objFilePath = @"Assets/OBJ importer";
+	string mtlFilePath = @"Assets/OBJ importer";
+
+	// Use this for initialization
+	void Start (){
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+
+			if (Input.GetKeyDown (KeyCode.I)) {
+			
+				loadObj (objFilePath, mtlFilePath);
+	
+		}
+		}
+}
